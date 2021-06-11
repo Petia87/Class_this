@@ -1,38 +1,43 @@
 class Family {
     constructor() {
         this.name = "sa6o "
+        this.friend = ''
         this.brother = function () {
-           return console.log("I am a first child");
+            return console.log("I am a first child");
         }
     }
     static father() {
-       return console.log("I am a first father");
+        return console.log("I am a first father");
     }
 }
 var br = new Family()
 var sister = new Family()
+var teacher = new Family()
 br.name
-sister.name="nina"
-sister.brother="I am a second child"
+sister.name = "nina"
+sister.brother = "I am a second child"
 //br.father()
 //br.mother()
-console.log(sister.brother);
-Family.mother=function () {
-    return console.log("I am a mother");
- }
-Family.mother()
 
-var facebook={
-    name:"ivan",
-    method(){
+console.log(sister.name);
+/*var ivan = {
+    name: "ivan",
+    friend: "",
+    method() {
         return "Ivan is facebook friend";
     }
 }
-facebook.method()
-console.log(facebook.method());
+var ivo = {
+    name: "ivo",
+}
 
-//console.log(sister.facebook);
-
+ivan.friend="ivo"
+sister.friend="ivo"
+console.log("ivo");
+ ivo.brother="ivan"
+ ivo.sister="nina"
+ console.log(nina)
+*/
 
 
 /*class Friend {

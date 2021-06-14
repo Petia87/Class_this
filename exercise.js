@@ -11,7 +11,7 @@
   const getArea=myRect.getArea
   console.log(getArea());
   console.log(getArea);*/
-class Rectangle {
+/*class Rectangle {
     constructor(height, width) {
         this.height = height;
         this.width = width;
@@ -23,6 +23,7 @@ class Rectangle {
 }
 const square = new Rectangle(10, 10);
 console.log(square.calcArea()); // 100
+
 class Circle {
         constructor(radius) {
          this.radius = radius; 
@@ -40,7 +41,7 @@ class Circle {
       var c1=new Circle(100)
       console.log(c1);
     
-   class Rectangle {
+   //class Rectangle {
         constructor(height, width) {
             this.height = height;
             this.width = width;
@@ -52,4 +53,30 @@ class Circle {
     }
     var r1=new Rectangle(100,200)
 console.log(r1);
-console.log(r1.getArea());
+console.log(r1.getArea());*/
+
+function fly() {
+    console.log(this);
+}
+
+let hero = {
+    name: 'Superman',
+    fly: fly,
+    laserEyes: function() { //function notation
+        console.log(this.name + ' - Shoot lasers');
+        console.log(this)
+    },
+    stopBulets() { //expretion
+        console.log(this);
+    },
+    punch: () => {  //aero
+        console.log('Punch');
+        console.log(this);
+    }
+}
+
+hero.laserEyes();
+let shootLasers = hero.laserEyes;
+shootLasers();
+hero.punch()
+

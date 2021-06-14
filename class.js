@@ -27,7 +27,7 @@ console.log(".................................2");
 console.log(Friend.goodFriendClass);
 console.log(Friend.goodFriendClass())
 console.log(".................................3");
-console.log(fr1.__proto__.goodFriend);
+console.log(fr1.goodFriend());
 console.log(fr1.__proto__.goodFriend());
 console.log(Friend.prototype.goodFriend());
 console.log(fr1.goodFriendChild());
